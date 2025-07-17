@@ -1,58 +1,161 @@
-<!--hide-->
-# Descriptive Statistics in Python - Step by step guide
-<!--endhide-->
+# Descriptive Statistics Exercises Project
 
-- Complete the problems using descriptive statistics and Python.
-- Then, understand a new dataset.
-- Use the knowledge learned to describe it statistically.
+![Preview](assets/preview.jpeg)
 
-## 🌱 How to start this project
+## Overview
 
-Follow the instructions below:
+This project provides hands-on exercises for learning descriptive statistics using Python. You'll work with a real dataset of 1000 popular movies from IMDb to explore various statistical concepts including measures of central tendency, spread, and distribution shape.
 
-1. Create a new repository by forking the [Git project](https://github.com/4GeeksAcademy/descriptive-statistics-exercises-project-with-python) or [by clicking here](https://github.com/4GeeksAcademy/descriptive-statistics-exercises-project-with-python/fork).
-2. Open the newly created repository in Codespace using the [Codespace button extension](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
-3. Once the Codespace VSCode has finished opening, start your project by following the instructions below.
+## What You'll Learn
 
-## 📝 Instructions
+- **Data Analysis with Pandas**: Load and manipulate real-world datasets
+- **Descriptive Statistics**: Calculate mean, median, mode, range, variance, and standard deviation
+- **Distribution Analysis**: Understand skewness and kurtosis
+- **Data Visualization**: Create histograms and interpret statistical plots
+- **Manual Calculations**: Step-by-step computation of standard deviation
 
-1. Once you start working on the project, you will see a `./notebook/problems.ipynb` file containing a list of exercises. 
+## Project Structure
 
-2. Before starting, make sure to select the **appropriate Kernel**.
+```
+├── assets/
+│   ├── imdb_1000.csv          # Dataset with 1000 popular movies
+│   ├── preview.jpeg           # Project preview image
+│   └── distribution.png       # Generated plot of title length distribution
+├── notebook/
+│   ├── problems.ipynb         # Main exercise notebook
+│   └── solutions.ipynb        # Complete solutions
+├── requirements.txt           # Python dependencies
+└── README.md                 # This file
+```
 
-    - When you open the notebook, a message will appear at the top indicating **"Select Kernel"**.
-    - Click on **"Select Kernel"** (as shown in the image).
+## Exercises
 
-![image-kernel](https://github.com/4GeeksAcademy/probability-exercises-project-in-python/blob/main/assets/image-kernel.png?raw=true)
+### Exercise 1: Movie Title Length Analysis
+Analyze the length of movie titles in the IMDb dataset:
 
-3. A list with available options will be displayed. Select **"Python Environments"** and choose the Python version you want to use.
+1. **Create Title Length Column** - Calculate character count for each title
+2. **Central Tendency Measures** - Compute mean, median, and mode
+3. **Measures of Spread** - Calculate range, variance, and standard deviation
+4. **Distribution Shape** - Analyze skewness and kurtosis
+5. **Extreme Values** - Find shortest and longest movie titles
+6. **Visualization and Summary** - Create histogram with statistical markers
 
-    - Make sure to select the version specified in the `devcontainer.json` file, as this is the recommended one for the project.
+![Distribution Plot](assets/distribution.png)
 
-![image-devcontainer](https://github.com/4GeeksAcademy/probability-exercises-project-in-python/blob/main/assets/devcontainer-image.png?raw=true)
+*The distribution plot shows the frequency of movie title lengths with key statistical measures marked: mean (red), median (green), and ±1 standard deviation (orange).*
 
-> Note: We also incorporated a `./notebook/solutions.ipynb` file that we strongly suggest you only use if you are stuck for more than 30 min or if you have already finished and want to compare it with your approach.
+### Exercise 2: Manual Standard Deviation Calculation
+Learn the mathematical foundation by manually calculating standard deviation:
 
-## 🚛 How to deliver this project
+1. **Select Sample Data** - Choose 5 title lengths from the dataset
+2. **Calculate the Mean** - Compute average of selected values
+3. **Calculate Squared Differences** - Find deviations from the mean
+4. **Variance and Standard Deviation** - Complete the calculation and verify results
 
-Once you have finished solving the exercises, be sure to commit your changes, `push` to your repository and go to 4Geeks.com to upload the repository link.
+## Getting Started
 
+### Option 1: GitHub Codespaces (Recommended)
 
-## 🚀 Make Your Work Visible
+1. **Fork this repository**:
+   - Click the "Fork" button at the top right of this repository
+   - Select your GitHub account as the destination
 
-You worked with a real dataset from the IMDb portal and applied descriptive statistics to analyze something uncommon: **the length of movie titles**. Through measures of central tendency, dispersion, and distribution shape, you discovered how cinema communicates even through its names.
+2. **Open in Codespaces**:
+   - Go to your forked repository
+   - Click the green "Code" button
+   - Select "Codespaces" tab
+   - Click "Create codespace on main"
 
-### What to Share?
+3. **Wait for setup**:
+   - Codespaces will automatically install dependencies
+   - The environment will be ready in 1-2 minutes
 
-Post an interesting insight from your results, such as how long the most common titles are, how dispersed they are, or which title is the longest. Accompany it with a chart.
+4. **Start working**:
+   - Open `notebook/problems.ipynb`
+   - Follow the exercise instructions
+   - Run cells step by step
 
-### ✨ Postable Example
+### Option 2: Local Development
 
-> "**What can statistics tell us about movie titles?**  
-> I analyzed 1,000 real titles from the IMDb dataset and discovered this with Python:   
-> • Average length: 23 characters  
-> • Mode: 15 characters  
-> • The longest title exceeds 60 characters  
->  
-> Most titles are short, but some extremely long ones create a clear positive skew. Cinema can also be analyzed with data! **#DataScience #Python #Statistics #IMDb #Visualization #Storytelling**"
+1. **Clone your forked repository**:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/perdrizet-descriptive-statistics-exercises-project-with-python.git
+   cd perdrizet-descriptive-statistics-exercises-project-with-python
+   ```
 
+2. **Create virtual environment**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Launch Jupyter**:
+   ```bash
+   jupyter notebook
+   ```
+
+5. **Open the exercises**:
+   - Navigate to `notebook/problems.ipynb`
+   - Start with Exercise 1
+
+## Dependencies
+
+This project uses the following Python libraries:
+
+- **pandas**: Data manipulation and analysis
+- **numpy**: Numerical computing
+- **matplotlib**: Data visualization
+- **scipy**: Statistical functions
+- **jupyter**: Interactive notebook environment
+
+## Tips for Success
+
+1. **Read comments carefully** - Each code block includes detailed explanations
+2. **Run cells sequentially** - Some cells depend on variables from previous cells
+3. **Experiment with the code** - Try modifying parameters to see different results
+4. **Compare your results** - Check your manual calculations against built-in functions
+5. **Understand the interpretations** - Focus on what the statistics tell you about the data
+
+## Dataset Information
+
+The IMDb dataset (`assets/imdb_1000.csv`) contains:
+- **1000 popular movies** from the IMDb database
+- **Movie titles** of varying lengths
+- **Additional metadata** for comprehensive analysis
+
+## Learning Outcomes
+
+After completing this project, you'll be able to:
+
+- ✅ Calculate and interpret descriptive statistics
+- ✅ Understand the relationship between different measures of central tendency
+- ✅ Analyze data distribution characteristics
+- ✅ Create meaningful data visualizations
+- ✅ Perform manual statistical calculations
+- ✅ Use Python libraries for data analysis
+
+## Need Help?
+
+- **Check the solutions notebook** (`notebook/solutions.ipynb`) if you get stuck
+- **Review the comments** in each code cell for guidance
+- **Experiment with the code** to deepen your understanding
+- **Look up documentation** for pandas, numpy, and matplotlib functions
+
+## Contributing
+
+If you find any issues or have suggestions for improvements:
+
+1. Create an issue in your forked repository
+2. Make your changes
+3. Submit a pull request with a clear description
+
+---
+
+**Happy Learning!** 📊📈
+
+This project is designed to give you practical experience with descriptive statistics using real data. Take your time, experiment with the code, and focus on understanding the concepts behind the calculations.
