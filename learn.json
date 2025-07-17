@@ -16,5 +16,6 @@
 	"description": {
 		"us": "Use your NumPy, Pandas, and Matplotlib skills to practice a little about descriptive statistics",
 		"es": "Usa tus habilidades con numpy, pandas y matplotlib para practicar un poco sobre estadística descriptiva."
-	}
+	},
+	"gitpod": true
 }
