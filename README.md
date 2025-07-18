@@ -20,12 +20,11 @@ This project provides hands-on exercises for learning descriptive statistics usi
 ├── assets/
 │   ├── imdb_1000.csv          # Dataset with 1000 popular movies
 │   ├── preview.jpeg           # Project preview image
-│   └── distribution.png       # Generated plot of title length distribution
-├── notebook/
-│   ├── problems.ipynb         # Main exercise notebook
-│   └── solutions.ipynb        # Complete solutions
+│   ├── distribution.png       # Generated plot of title length distribution
+│   └── quantiles.png          # Generated plot with quantile markers
+├── problems.ipynb             # Main exercise notebook
 ├── requirements.txt           # Python dependencies
-└── README.md                 # This file
+└── README.md                  # This file
 ```
 
 ## Exercises
@@ -71,7 +70,7 @@ Learn the mathematical foundation by manually calculating standard deviation:
    - The environment will be ready in 1-2 minutes
 
 4. **Start working**:
-   - Open `notebook/problems.ipynb`
+   - Open `problems.ipynb`
    - Follow the exercise instructions
    - Run cells step by step
 
@@ -100,7 +99,7 @@ Learn the mathematical foundation by manually calculating standard deviation:
    ```
 
 5. **Open the exercises**:
-   - Navigate to `notebook/problems.ipynb`
+   - Navigate to `problems.ipynb`
    - Start with Exercise 1
 
 ## Dependencies
@@ -141,7 +140,7 @@ After completing this project, you'll be able to:
 
 ## Need Help?
 
-- **Check the solutions notebook** (`notebook/solutions.ipynb`) if you get stuck
+- **Check the solutions notebook** (`solutions.ipynb`) if you get stuck
 - **Review the comments** in each code cell for guidance
 - **Experiment with the code** to deepen your understanding
 - **Look up documentation** for pandas, numpy, and matplotlib functions
