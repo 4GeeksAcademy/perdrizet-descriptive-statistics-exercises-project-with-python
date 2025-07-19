@@ -14,6 +14,14 @@ This project provides hands-on exercises for learning descriptive statistics usi
 - **Data Visualization**: Create histograms and interpret statistical plots
 - **Manual Calculations**: Step-by-step computation of standard deviation
 
+## Project Features
+
+- **Modular Code Structure**: Functions are organized in separate modules for better maintainability
+- **Comprehensive Testing**: Unit tests ensure code reliability and correctness
+- **Interactive Jupyter Notebooks**: Step-by-step exercises with detailed explanations
+- **Real Dataset Analysis**: Work with actual IMDb movie data
+- **Statistical Visualizations**: Generate professional-quality plots and charts
+
 ## Project Structure
 
 ```
@@ -22,7 +30,11 @@ This project provides hands-on exercises for learning descriptive statistics usi
 │   ├── preview.jpeg           # Project preview image
 │   ├── distribution.png       # Generated plot of title length distribution
 │   └── quantiles.png          # Generated plot with quantile markers
-├── problems.ipynb             # Main exercise notebook
+├── notebook/
+│   ├── problems.ipynb         # Main exercise notebook
+│   └── functions.py           # Utility functions for data processing
+├── tests/
+│   └── test_functions.py      # Unit tests for the functions module
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
 ```
@@ -51,6 +63,30 @@ Learn the mathematical foundation by manually calculating standard deviation:
 3. **Calculate Squared Differences** - Find deviations from the mean
 4. **Variance and Standard Deviation** - Complete the calculation and verify results
 
+## Code Organization
+
+### Functions Module (`notebook/functions.py`)
+The project includes a dedicated functions module containing:
+
+- `add_title_length_features()`: Adds title length calculations to DataFrames
+- Comprehensive error handling and input validation
+- Clear documentation and type hints
+
+### Unit Tests (`tests/test_functions.py`)
+Comprehensive test suite covering:
+
+- ✅ Basic functionality with default parameters
+- ✅ Custom column names and parameters
+- ✅ Error handling for invalid inputs
+- ✅ Edge cases (empty DataFrames, NaN values)
+- ✅ Special characters and Unicode support
+- ✅ Data integrity (original DataFrame preservation)
+
+**Run tests**:
+```bash
+python tests/test_functions.py
+```
+
 ## Getting Started
 
 ### Option 1: GitHub Codespaces (Recommended)
@@ -70,9 +106,14 @@ Learn the mathematical foundation by manually calculating standard deviation:
    - The environment will be ready in 1-2 minutes
 
 4. **Start working**:
-   - Open `problems.ipynb`
+   - Open `notebook/problems.ipynb`
    - Follow the exercise instructions
    - Run cells step by step
+
+5. **Run tests** (optional):
+   - Open a terminal in Codespaces
+   - Navigate to the project root
+   - Run: `python tests/test_functions.py`
 
 ### Option 2: Local Development
 
@@ -99,8 +140,13 @@ Learn the mathematical foundation by manually calculating standard deviation:
    ```
 
 5. **Open the exercises**:
-   - Navigate to `problems.ipynb`
+   - Navigate to `notebook/problems.ipynb`
    - Start with Exercise 1
+
+6. **Run tests** (optional):
+   ```bash
+   python tests/test_functions.py
+   ```
 
 ## Dependencies
 
@@ -137,6 +183,9 @@ After completing this project, you'll be able to:
 - ✅ Create meaningful data visualizations
 - ✅ Perform manual statistical calculations
 - ✅ Use Python libraries for data analysis
+- ✅ Write modular, reusable code functions
+- ✅ Create and run unit tests for data processing functions
+- ✅ Organize code projects with proper structure
 
 ## Need Help?
 
