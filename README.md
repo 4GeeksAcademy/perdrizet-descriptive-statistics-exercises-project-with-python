@@ -1,209 +1,143 @@
-# Descriptive Statistics Exercises Project
+# Descriptive Statistics with IMDb Movie Data
 
-![Preview](assets/preview.jpeg)
+[![Codespaces Prebuilds](https://github.com/4GeeksAcademy/perdrizet-descriptive-statistics-exercises-project-with-python/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/4GeeksAcademy/perdrizet-descriptive-statistics-exercises-project-with-python/actions/workflows/codespaces/create_codespaces_prebuilds)
 
-## Overview
+A comprehensive data science project focused on descriptive statistics analysis using Python and Pandas. This project demonstrates essential statistical analysis techniques through practical exercises with real-world IMDb movie data.
 
-This project provides hands-on exercises for learning descriptive statistics using Python. You'll work with a real dataset of 1000 popular movies from IMDb to explore various statistical concepts including measures of central tendency, spread, and distribution shape.
+![Project Preview](assets/preview.jpeg)
 
-## What You'll Learn
 
-- **Data Analysis with Pandas**: Load and manipulate real-world datasets
-- **Descriptive Statistics**: Calculate mean, median, mode, range, variance, and standard deviation
-- **Distribution Analysis**: Understand skewness and kurtosis
-- **Data Visualization**: Create histograms and interpret statistical plots
-- **Manual Calculations**: Step-by-step computation of standard deviation
+## Project Overview
 
-## Project Features
+This project analyzes IMDb movie data to demonstrate fundamental descriptive statistics concepts. The dataset contains 1000 popular movies from the IMDb website and provides hands-on experience with:
 
-- **Modular Code Structure**: Functions are organized in separate modules for better maintainability
-- **Comprehensive Testing**: Unit tests ensure code reliability and correctness
-- **Interactive Jupyter Notebooks**: Step-by-step exercises with detailed explanations
-- **Real Dataset Analysis**: Work with actual IMDb movie data
-- **Statistical Visualizations**: Generate professional-quality plots and charts
+- Central tendency measures (mean, median, mode)
+- Measures of spread (range, variance, standard deviation)  
+- Distribution shape analysis (skewness, kurtosis)
+- Manual statistical calculations
+- Data visualization and interpretation
+- Extreme value identification
 
-## Project Structure
-
-```
-├── assets/
-│   ├── imdb_1000.csv          # Dataset with 1000 popular movies
-│   ├── preview.jpeg           # Project preview image
-│   ├── distribution.png       # Generated plot of title length distribution
-│   └── quantiles.png          # Generated plot with quantile markers
-├── notebook/
-│   ├── problems.ipynb         # Main exercise notebook
-│   └── functions.py           # Utility functions for data processing
-├── tests/
-│   └── test_functions.py      # Unit tests for the functions module
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
-```
-
-## Exercises
-
-### Exercise 1: Movie Title Length Analysis
-Analyze the length of movie titles in the IMDb dataset:
-
-1. **Create Title Length Column** - Calculate character count for each title
-2. **Central Tendency Measures** - Compute mean, median, and mode
-3. **Measures of Spread** - Calculate range, variance, and standard deviation
-4. **Distribution Shape** - Analyze skewness and kurtosis
-5. **Extreme Values** - Find shortest and longest movie titles
-6. **Visualization and Summary** - Create histogram with statistical markers
-
-![Distribution Plot](assets/distribution.png)
-
-*The distribution plot shows the frequency of movie title lengths with key statistical measures marked: mean (red), median (green), and ±1 standard deviation (orange).*
-
-### Exercise 2: Manual Standard Deviation Calculation
-Learn the mathematical foundation by manually calculating standard deviation:
-
-1. **Select Sample Data** - Choose 5 title lengths from the dataset
-2. **Calculate the Mean** - Compute average of selected values
-3. **Calculate Squared Differences** - Find deviations from the mean
-4. **Variance and Standard Deviation** - Complete the calculation and verify results
-
-## Code Organization
-
-### Functions Module (`notebook/functions.py`)
-The project includes a dedicated functions module containing:
-
-- `add_title_length_features()`: Adds title length calculations to DataFrames
-- Comprehensive error handling and input validation
-- Clear documentation and type hints
-
-### Unit Tests (`tests/test_functions.py`)
-Comprehensive test suite covering:
-
-- ✅ Basic functionality with default parameters
-- ✅ Custom column names and parameters
-- ✅ Error handling for invalid inputs
-- ✅ Edge cases (empty DataFrames, NaN values)
-- ✅ Special characters and Unicode support
-- ✅ Data integrity (original DataFrame preservation)
-
-**Run tests**:
-```bash
-python tests/test_functions.py
-```
 
 ## Getting Started
 
 ### Option 1: GitHub Codespaces (Recommended)
 
-1. **Fork this repository**:
-   - Click the "Fork" button at the top right of this repository
-   - Select your GitHub account as the destination
+1. **Fork the Repository**
+   - Click the "Fork" button on the top right of the GitHub repository page
+   - 4Geeks students: set 4GeeksAcademy as the owner - 4Geeks pays for your codespace usage. All others, set yourself as the owner
+   - Give the fork a descriptive name. 4Geeks students: I recommend including your GitHub username to help in finding the fork if you lose the link
+   - Click "Create fork"
+   - 4Geeks students: bookmark or otherwise save the link to your fork
 
-2. **Open in Codespaces**:
-   - Go to your forked repository
-   - Click the green "Code" button
-   - Select "Codespaces" tab
-   - Click "Create codespace on main"
+2. **Create a GitHub Codespace**
+   - On your forked repository, click the "Code" button
+   - Select "Create codespace on main"
+   - If the "Create codespace on main" option is grayed out - go to your codespaces list from the three-bar menu at the upper left and delete an old codespace
+   - Wait for the environment to load (dependencies are pre-installed)
 
-3. **Wait for setup**:
-   - Codespaces will automatically install dependencies
-   - The environment will be ready in 1-2 minutes
-
-4. **Start working**:
-   - Open `notebook/problems.ipynb`
-   - Follow the exercise instructions
-   - Run cells step by step
-
-5. **Run tests** (optional):
-   - Open a terminal in Codespaces
-   - Navigate to the project root
-   - Run: `python tests/test_functions.py`
+3. **Start Working**
+   - Open `notebooks/assignment.ipynb` in the Jupyter interface
+   - Follow the step-by-step instructions in the notebook
 
 ### Option 2: Local Development
 
-1. **Clone your forked repository**:
+1. **Prerequisites**
+   - Git
+   - Python >= 3.10
+
+2. **Fork the repository**
+   - Click the "Fork" button on the top right of the GitHub repository page
+   - Optional: give the fork a new name and/or description
+   - Click "Create fork"
+
+3. **Clone the repository**
+   - From your fork of the repository, click the green "Code" button at the upper right
+   - From the "Local" tab, select HTTPS and copy the link
+   - Run the following commands on your machine, replacing `<LINK>` and `<REPO_NAME>`
+
    ```bash
-   git clone https://github.com/YOUR_USERNAME/perdrizet-descriptive-statistics-exercises-project-with-python.git
-   cd perdrizet-descriptive-statistics-exercises-project-with-python
+   git clone <LINK>
+   cd <REPO_NAME>
    ```
 
-2. **Create virtual environment**:
+4. **Set Up Environment**
+
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**:
-   ```bash
+   source venv/bin/activate
    pip install -r requirements.txt
    ```
 
-4. **Launch Jupyter**:
+5. **Launch Jupyter & start the notebook**
    ```bash
-   jupyter notebook
+   jupyter notebook notebooks/assignment.ipynb
    ```
 
-5. **Open the exercises**:
-   - Navigate to `notebook/problems.ipynb`
-   - Start with Exercise 1
 
-6. **Run tests** (optional):
-   ```bash
-   python tests/test_functions.py
-   ```
+## Project Structure
 
-## Dependencies
+```
+├── .devcontainer/        # Development container configuration
+├── assets/               # Images and resources directory
+│   ├── distribution.png  # Distribution visualization examples
+│   ├── preview.jpeg      # Project preview image
+│   └── quantiles.png     # Quantiles visualization examples
+│
+├── data/                 # Data file directory
+│   └── imdb_1000.csv     # IMDb movie dataset
+│
+├── notebooks/            # Jupyter notebook directory
+│   ├── assignment.ipynb  # Assignment notebook (student version)
+│   ├── solution.ipynb    # Solution notebook (complete analysis)
+│   └── functions.py      # Helper functions module
+│
+├── tests/                # Unit tests directory
+│   └── test_functions.py # Tests for helper functions
+│
+├── .gitignore            # Files/directories not tracked by git
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
+```
 
-This project uses the following Python libraries:
 
-- **pandas**: Data manipulation and analysis
-- **numpy**: Numerical computing
-- **matplotlib**: Data visualization
-- **scipy**: Statistical functions
-- **jupyter**: Interactive notebook environment
+## Dataset
 
-## Tips for Success
+The dataset (`data/imdb_1000.csv`) contains 1000 popular movies from IMDb with the following features:
+- **title**: Movie titles (primary focus for statistical analysis)
+- **star_rating**: IMDb ratings (1-10 scale)
+- **content_rating**: Age-appropriate ratings (G, PG, PG-13, R, etc.)
+- **genre**: Movie genres (Action, Comedy, Drama, etc.)
+- **duration**: Movie length in minutes
+- **actors_list**: List of main actors
 
-1. **Read comments carefully** - Each code block includes detailed explanations
-2. **Run cells sequentially** - Some cells depend on variables from previous cells
-3. **Experiment with the code** - Try modifying parameters to see different results
-4. **Compare your results** - Check your manual calculations against built-in functions
-5. **Understand the interpretations** - Focus on what the statistics tell you about the data
+**Note**: This dataset was collected for educational purposes only. Focus is primarily on analyzing title length characteristics using descriptive statistics.
 
-## Dataset Information
 
-The IMDb dataset (`assets/imdb_1000.csv`) contains:
-- **1000 popular movies** from the IMDb database
-- **Movie titles** of varying lengths
-- **Additional metadata** for comprehensive analysis
+## Learning Objectives
 
-## Learning Outcomes
+1. **Statistical Measures**: Understanding and applying descriptive statistics
+2. **Data Analysis**: Extracting insights from numerical data
+3. **Manual Calculations**: Building intuition through step-by-step computation
+4. **Data Visualization**: Creating meaningful plots and interpretations
+5. **Python Programming**: Using pandas, numpy, scipy, and matplotlib
 
-After completing this project, you'll be able to:
 
-- ✅ Calculate and interpret descriptive statistics
-- ✅ Understand the relationship between different measures of central tendency
-- ✅ Analyze data distribution characteristics
-- ✅ Create meaningful data visualizations
-- ✅ Perform manual statistical calculations
-- ✅ Use Python libraries for data analysis
-- ✅ Write modular, reusable code functions
-- ✅ Create and run unit tests for data processing functions
-- ✅ Organize code projects with proper structure
+## Technologies Used
 
-## Need Help?
+- **Python 3.11**: Core programming language
+- **Pandas**: Data manipulation and analysis
+- **NumPy**: Numerical computing and array operations
+- **SciPy**: Statistical functions (skewness, kurtosis, mode)
+- **Matplotlib**: Data visualization and plotting
+- **Jupyter**: Interactive development environment
 
-- **Check the solutions notebook** (`solutions.ipynb`) if you get stuck
-- **Review the comments** in each code cell for guidance
-- **Experiment with the code** to deepen your understanding
-- **Look up documentation** for pandas, numpy, and matplotlib functions
 
 ## Contributing
 
-If you find any issues or have suggestions for improvements:
+This is an educational project. Contributions for improving the analysis or adding new statistical insights are welcome:
 
-1. Create an issue in your forked repository
-2. Make your changes
-3. Submit a pull request with a clear description
-
----
-
-**Happy Learning!** 📊📈
-
-This project is designed to give you practical experience with descriptive statistics using real data. Take your time, experiment with the code, and focus on understanding the concepts behind the calculations.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
