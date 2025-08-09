@@ -79,10 +79,7 @@ This project analyzes IMDb movie data to demonstrate fundamental descriptive sta
 
 ```
 ├── .devcontainer/        # Development container configuration
-├── assets/               # Images and resources directory
-│   ├── distribution.png  # Distribution visualization examples
-│   ├── preview.jpeg      # Project preview image
-│   └── quantiles.png     # Quantiles visualization examples
+├── assets/               # Images and other files
 │
 ├── data/                 # Data file directory
 │   └── imdb_1000.csv     # IMDb movie dataset
